@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(./home-hero-vector.png);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 900px 700px;
+}
+    
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0B3954;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+ img {
+        height: 300px;
+        width: 500px;
+        top: 50px;
+        right: 50px ;
+        transition: 0.5s;
+        float: right;
+        z-index: -1;
+
+}
+
+      section#login {
+        text-align: center;
+    
+      }
+      section#login input,
+      section#login textarea {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+      }
+      section#login input[type="submit"] {
+        background-color: #9D5691;
+        border: 0;
+        color: #F0F0F0;
+        cursor: pointer;
+      }
+      section#login form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+      }
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#shop">Shop</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+  <li class="right"><a href="#login">Login</a></li>
+  <li class="right"><a href="#signup">Sign Up</a></li>
+</ul>
+
+
+
+    <div class="img">
+      <img src="./flower.png" alt="" />
+    </div>
+   
+    
+
+
+  <section id="login">
+    
+    <h3>Provide your Log In details.</h3>
+    <form>
+        
+        <input type="text" placeholder="Firstname" />
+        <input type="text" placeholder="Lastname" />
+        <input type="email" placeholder="Email Address" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <h4>Already a member? Log In</h4>
+        <input type="submit" value="Sign Up" />
+      
+    </form>
+  </section>
+
+
+</body>
+</html>
